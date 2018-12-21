@@ -11,68 +11,37 @@ import Unarchive from "@material-ui/icons/Unarchive";
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
 import TableList from "views/TableList/TableList.jsx";
-import Typography from "views/Typography/Typography.jsx";
-import Icons from "views/Icons/Icons.jsx";
 import Maps from "views/Maps/Maps.jsx";
-import NotificationsPage from "views/Notifications/Notifications.jsx";
-import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
+
 
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    sidebarName: "Dashboard",
-    navbarName: "Material Dashboard",
+    sidebarName: "Painel",
+    navbarName: "Painel",
     icon: Dashboard,
     component: DashboardPage
   },
   {
     path: "/user",
-    sidebarName: "User Profile",
-    navbarName: "Profile",
+    sidebarName: "Cadastro de Lead",
+    navbarName: "Cadastro de Lead",
     icon: Person,
     component: UserProfile
   },
   {
     path: "/table",
-    sidebarName: "Table List",
-    navbarName: "Table List",
+    sidebarName: "Listar Leads",
+    navbarName: "Liste de Leads",
     icon: "content_paste",
     component: TableList
   },
   {
-    path: "/typography",
-    sidebarName: "Typography",
-    navbarName: "Typography",
-    icon: LibraryBooks,
-    component: Typography
-  },
-  {
-    path: "/icons",
-    sidebarName: "Icons",
-    navbarName: "Icons",
-    icon: BubbleChart,
-    component: Icons
-  },
-  {
     path: "/maps",
-    sidebarName: "Maps",
-    navbarName: "Map",
+    sidebarName: "Viabilidade Checker",
+    navbarName: "Viabilidade",
     icon: LocationOn,
     component: Maps
-  },
-  {
-    path: "/notifications",
-    sidebarName: "Notifications",
-    navbarName: "Notifications",
-    icon: Notifications,
-    component: NotificationsPage
-  },
-  {
-    path: "/upgrade-to-pro",
-    sidebarName: "Upgrade To PRO",
-    navbarName: "Upgrade To PRO",
-    icon: Unarchive,
-    component: UpgradeToPro
   },
   { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
 ];

@@ -42,8 +42,8 @@ function UserProfile(props) {
         <GridItem xs={12} sm={12} md={8}>
           <Card>
             <CardHeader color="primary">
-              <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
-              <p className={classes.cardCategoryWhite}>Complete your profile</p>
+              <h4 className={classes.cardTitleWhite}>Cadastrar Leads</h4>
+              <p className={classes.cardCategoryWhite}>Todos informações são obrigatorias</p>
             </CardHeader>
             <CardBody>
               <GridContainer>
@@ -61,8 +61,8 @@ function UserProfile(props) {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={3}>
                   <CustomInput
-                    labelText="Username"
-                    id="username"
+                    labelText="Razao Social"
+                    id="razao-social"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -70,8 +70,8 @@ function UserProfile(props) {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="Email address"
-                    id="email-address"
+                    labelText="Nome Fantasia"
+                    id="nome-fantasia"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -81,8 +81,8 @@ function UserProfile(props) {
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
-                    labelText="First Name"
-                    id="first-name"
+                    labelText="CNPJ"
+                    id="cnpj"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -90,8 +90,8 @@ function UserProfile(props) {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
-                    labelText="Last Name"
-                    id="last-name"
+                    labelText="Ramo de Atividade"
+                    id="ramo-de-atividade"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -101,8 +101,8 @@ function UserProfile(props) {
               <GridContainer>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="City"
-                    id="city"
+                    labelText="Endereço"
+                    id="endereco"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -110,8 +110,8 @@ function UserProfile(props) {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="Country"
-                    id="country"
+                    labelText="Contato"
+                    id="contado"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -119,8 +119,8 @@ function UserProfile(props) {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
-                    labelText="Postal Code"
-                    id="postal-code"
+                    labelText="Email"
+                    id="email"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -129,10 +129,10 @@ function UserProfile(props) {
               </GridContainer>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={12}>
-                  <InputLabel style={{ color: "#AAAAAA" }}>About me</InputLabel>
+                  <InputLabel style={{ color: "#AAAAAA" }}>Descrição</InputLabel>
                   <CustomInput
-                    labelText="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
-                    id="about-me"
+                    labelText="I am a company from north zone looking for oportunities in fiber optics"
+                    id="descricao"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -145,7 +145,7 @@ function UserProfile(props) {
               </GridContainer>
             </CardBody>
             <CardFooter>
-              <Button color="primary">Update Profile</Button>
+              <Button color="primary">Salvar</Button>
             </CardFooter>
           </Card>
         </GridItem>
@@ -157,8 +157,8 @@ function UserProfile(props) {
               </a>
             </CardAvatar>
             <CardBody profile>
-              <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
+              <h6 className={classes.cardCategory}>SUPPORTE GRUPO REDES</h6>
+              <h4 className={classes.cardTitle}>Armando</h4>
               <p className={classes.description}>
                 Don't be scared of the truth because we need to restart the
                 human foundation in truth And I love you like Kanye loves Kanye

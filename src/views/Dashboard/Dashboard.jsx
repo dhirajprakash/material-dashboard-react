@@ -144,7 +144,7 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Daily Sales</h4>
+                <h4 className={classes.cardTitle}>Leads Performance</h4>
                 <p className={classes.cardCategory}>
                   <span className={classes.successText}>
                     <ArrowUpward className={classes.upArrowCardCategory} /> 55%
@@ -172,7 +172,7 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Email Subscriptions</h4>
+                <h4 className={classes.cardTitle}>Qualifer/Desqualifier</h4>
                 <p className={classes.cardCategory}>
                   Last Campaign Performance
                 </p>
@@ -196,7 +196,7 @@ class Dashboard extends React.Component {
                 />
               </CardHeader>
               <CardBody>
-                <h4 className={classes.cardTitle}>Completed Tasks</h4>
+                <h4 className={classes.cardTitle}>Sales Agent Performance</h4>
                 <p className={classes.cardCategory}>
                   Last Campaign Performance
                 </p>
@@ -212,11 +212,11 @@ class Dashboard extends React.Component {
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
             <CustomTabs
-              title="Tasks:"
+              title="FAQs:"
               headerColor="primary"
               tabs={[
                 {
-                  tabName: "Bugs",
+                  tabName: "Fiberless 360",
                   tabIcon: BugReport,
                   tabContent: (
                     <Tasks
@@ -227,7 +227,7 @@ class Dashboard extends React.Component {
                   )
                 },
                 {
-                  tabName: "Website",
+                  tabName: "Fiber",
                   tabIcon: Code,
                   tabContent: (
                     <Tasks
@@ -238,7 +238,30 @@ class Dashboard extends React.Component {
                   )
                 },
                 {
-                  tabName: "Server",
+                  tabName: "Metro",
+                  tabIcon: Code,
+                  tabContent: (
+                    <Tasks
+                      checkedIndexes={[0]}
+                      tasksIndexes={[0, 1]}
+                      tasks={website}
+                    />
+                  )
+                }
+                ,
+                {
+                  tabName: "LAN",
+                  tabIcon: Code,
+                  tabContent: (
+                    <Tasks
+                      checkedIndexes={[0]}
+                      tasksIndexes={[0, 1]}
+                      tasks={website}
+                    />
+                  )
+                },
+                {
+                  tabName: "Internet",
                   tabIcon: Cloud,
                   tabContent: (
                     <Tasks
